@@ -1,0 +1,18 @@
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  &__image {
+    background-color: red;
+    background: url(../../assets/bg-image.jpg) no-repeat;
+    background-size: cover;
+    z-index: -9999;
+  }
+
+  &__greylayer {
+    // background-color: #363d41;
+    opacity: 0.85;
+    background-color: rgb(53, 60, 64);
+    z-index: -1;
+  }
+}
