@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
                 key={page}
                 sx={{
                   m: 0,
-                  px: 1,
+                  px: 2,
                   py: 2,
                   color: "white",
                   display: "block",
