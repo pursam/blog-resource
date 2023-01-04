@@ -1,3 +1,4 @@
+import Slider from "components/Slider/Slider";
 import React from "react";
 
 type Props = {};
@@ -5,7 +6,7 @@ type Props = {};
 const Main = (props: Props) => {
   return (
     <main>
-      <div>Slider</div>
+      <Slider />
       <div>styled border line</div>
       <div>particles cards</div>
     </main>

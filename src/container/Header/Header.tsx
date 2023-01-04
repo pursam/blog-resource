@@ -1,5 +1,5 @@
 import React from "react";
-import AppBar from "../../components/AppBar";
+import AppBar from "../../components/AppBar/AppBar";
 import picture from "../../assets/header-logo.png";
 import { Box } from "@mui/material";
 import "./Header.scss";
