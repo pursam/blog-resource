@@ -1,7 +1,124 @@
-.slider-container {
-  display: block;
+.slider {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  max-width: 1152px;
+  height: 100vh;
+  max-height: 600px;
+  overflow: hidden;
+}
+.slider__overlay {
+  position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
+  background-color: black;
+  opacity: 0.15;
+  z-index: 2;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+.slide.active {
+  opacity: 1;
+}
+.image {
+  width: 100%;
+  max-height: 600px;
   border-radius: 10px;
-  background-color: red;
+}
+.buttons {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow {
+  font-size: 3em;
+  color: black;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+  user-select: none;
+  transition: all 1.5s;
+}
+.arrow--left {
+  margin-left: -100px;
+}
+.arrow--right {
+  margin-right: -100px;
+}
+
+.slider:hover {
+  .arrow {
+    opacity: 0.7;
+  }
+  .arrow--left {
+    margin-left: 30px;
+  }
+  .arrow--right {
+    margin-right: 30px;
+  }
+}
+//часть тайтла слайда
+.article {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: transform 1.6s ease-in-out 0.5s, opacity 1s 0.5s;
+
+  color: white; //нужно глобальнее проставить цвет или поменять на inherit
+  z-index: 2;
+}
+.article.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.article__tagname {
+}
+.article__tagname-link {
+  padding: 7px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: #e7cd3b;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+.article__tagname-link:hover {
+  background-color: #1d2123;
+}
+
+.article__name {
+}
+.article__read-this {
+  margin-top: 16px;
+}
+.article__read-this-link {
+  padding: 18px;
+  border: white solid;
+  border-left: 0;
+  border-right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
 }

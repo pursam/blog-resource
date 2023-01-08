@@ -1,26 +1,67 @@
 import React from "react";
+import { Box } from "@mui/material";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import slides from "./SlideData";
 import "./Slider.scss";
-import SlideList from "./SlideList";
 
 type Props = {};
 
 const Slider = (props: Props) => {
+  const [curr, setCurr] = React.useState(0);
+
+  const goToNext = () => {
+    setCurr(curr === slides.length - 1 ? 0 : curr + 1);
+  };
+
+  const goToPrev = () => {
+    setCurr(curr === 0 ? slides.length - 1 : curr - 1);
+  };
+
+  React.useEffect(() => {
+    const timeoutId = setTimeout(goToNext, 5000);
+    return function () {
+      clearTimeout(timeoutId);
+    };
+  });
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
+
   return (
-    <div className="slider-container">
-      <div className="slides-container">
-        {/* <img src="" alt="error" /> */}
-        <ul>
-          {SlideList.map((el, i) => {
-            return (
-              <li>
-                <img src={el.url} alt="slide" />
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-      <div className="description-container"></div>
-    </div>
+    <Box className="slider">
+      <div className="slider__overlay" />
+      <Box className="buttons">
+        <FaArrowAltCircleLeft
+          className="arrow arrow--left"
+          onClick={goToPrev}
+        />
+        <FaArrowAltCircleRight
+          className="arrow arrow--right"
+          onClick={goToNext}
+        />
+      </Box>
+      {slides.map((s, i) => (
+        <>
+          <div className={i === curr ? "slide active" : "slide"}>
+            <img className="image" src={s.image} alt="slide" key={s.title} />
+          </div>
+          <div className={i === curr ? "article active" : "article"}>
+            <div className="article__tagname">
+              <a href="#" className="article__tagname-link">
+                tagname
+              </a>
+            </div>
+            <h1 className="article__name">Title name</h1>
+            <div className="article__read-this">
+              <a href="#" className="article__read-this-link">
+                Read this article
+              </a>
+            </div>
+          </div>
+        </>
+      ))}
+    </Box>
   );
 };
 
