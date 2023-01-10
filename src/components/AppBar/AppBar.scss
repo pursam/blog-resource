@@ -7,6 +7,10 @@
 .search-button {
   display: flexbox;
   margin-right: 17px;
+  &:hover {
+    color: #e7cd3b;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 }
 .toolbar {
   min-height: 60px;

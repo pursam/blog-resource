@@ -10,9 +10,18 @@
   }
 
   &__greylayer {
-    // background-color: #363d41;
     opacity: 0.85;
     background-color: rgb(53, 60, 64);
-    z-index: -1;
+    z-index: -2;
   }
+}
+.main-container {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 1.571428571428571;
+  color: #8a8a8a;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
