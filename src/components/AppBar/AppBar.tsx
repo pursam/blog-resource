@@ -31,18 +31,16 @@ function ResponsiveAppBar() {
             }}
           >
             {pages.map((page) => (
-              <Button
+              <a
+                href=""
+                className="app-btn"
                 key={page}
-                sx={{
-                  m: 0,
-                  px: 2,
-                  py: 2,
-                  color: "white",
-                  display: "block",
-                }}
+                // disableFocusRipple={true}
+                // disableRipple={true}
               >
-                {page}
-              </Button>
+                <span className="app-btn-span">{page}</span>
+                <span className="app-btn-bg" />
+              </a>
             ))}
           </Box>
         </Toolbar>
