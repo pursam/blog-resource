@@ -16,3 +16,7 @@
   background-color: #e7cd3b;
   clear: both; //запрещает обтекание с двух сторон
 }
+.card-box {
+  display: flex;
+  justify-content: space-between;
+}

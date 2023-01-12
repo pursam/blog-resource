@@ -44,7 +44,7 @@ const Slider = (props: Props) => {
       {slides.map((s, i) => (
         <>
           <div className={i === curr ? "slide active" : "slide"}>
-            <img className="image" src={s.image} alt="slide" key={s.title} />
+            <img className="image" src={s.image} alt="slide" key={i} />
           </div>
           <div className={i === curr ? "article active" : "article"}>
             <div className="article__tagname">
