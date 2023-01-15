@@ -11,8 +11,8 @@ import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
-// import Avatar from "@mui/material/Avatar";
-// import { red } from "@mui/material/colors";
+import Avatar from "@mui/material/Avatar";
+import { red } from "@mui/material/colors";
 // import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 // import MoreVertIcon from "@mui/icons-material/MoreVert";
 
@@ -28,7 +28,15 @@ type Props = {
 const articleCards = ({ el }: Props) => {
   return (
     <Card sx={{ maxWidth: 345 }} className="article-card">
-      <CardHeader className="card-header" title={el.name} />
+      <CardHeader
+        avatar={
+          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            R
+          </Avatar>
+        }
+        className="card-header"
+        title={el.name}
+      />
       <a href="" className="card-tag-link">
         <CardMedia
           component="img"

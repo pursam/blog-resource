@@ -2,6 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import slides from "./SlideData";
+import articles from "components/Articles/ArticlesData";
 import "./Slider.scss";
 
 type Props = {};
@@ -10,11 +11,11 @@ const Slider = (props: Props) => {
   const [curr, setCurr] = React.useState(0);
 
   const goToNext = () => {
-    setCurr(curr === slides.length - 1 ? 0 : curr + 1);
+    setCurr(curr === 4 - 1 ? 0 : curr + 1);
   };
 
   const goToPrev = () => {
-    setCurr(curr === 0 ? slides.length - 1 : curr - 1);
+    setCurr(curr === 0 ? 4 - 1 : curr - 1);
   };
 
   React.useEffect(() => {
@@ -24,7 +25,7 @@ const Slider = (props: Props) => {
     };
   });
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
+  if (!Array.isArray(slides) || 4 <= 0) {
     return null;
   }
 
@@ -41,7 +42,7 @@ const Slider = (props: Props) => {
           onClick={goToNext}
         />
       </Box>
-      {slides.map((s, i) => (
+      {articles.map((s, i) => (
         <>
           <div className={i === curr ? "slide active" : "slide"}>
             <img className="image" src={s.image} alt="slide" key={i} />
@@ -49,10 +50,10 @@ const Slider = (props: Props) => {
           <div className={i === curr ? "article active" : "article"}>
             <div className="article__tagname">
               <a href="#" className="article__tagname-link">
-                tagname
+                {s.tags}
               </a>
             </div>
-            <h1 className="article__name">Title name</h1>
+            <h1 className="article__name">{s.name}</h1>
             <div className="article__read-this">
               <a href="#" className="article__read-this-link">
                 Read this article
