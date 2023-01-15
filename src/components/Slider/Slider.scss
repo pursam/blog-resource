@@ -88,51 +88,48 @@
 
   color: white; //нужно глобальнее проставить цвет или поменять на inherit
   z-index: 3;
+
+  &__tagname-link {
+    padding: 7px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    background-color: #e7cd3b;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      background-color: #1d2123;
+    }
+  }
+  &__name {
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  &__read-this {
+    margin-top: 16px;
+  }
+  &__read-this-link {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 18px 0px 17px 0px;
+    border: white solid;
+    border-left: 0;
+    border-right: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      padding: 18px 18px 17px 18px;
+      background-color: #1d2123;
+      border-radius: 4px;
+      border: 0;
+    }
+  }
 }
 .article.active {
   transform: translateY(0);
   opacity: 1;
   z-index: 4;
-}
-
-.article__tagname {
-}
-.article__tagname-link {
-  padding: 7px 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: inherit;
-  background-color: #e7cd3b;
-  border-radius: 4px;
-  transition: background-color 0.2s ease-in-out;
-}
-.article__tagname-link:hover {
-  background-color: #1d2123;
-}
-
-.article__name {
-  text-align: center;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.article__read-this {
-  margin-top: 16px;
-}
-.article__read-this-link {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 18px 0px 17px 0px;
-  border: white solid;
-  border-left: 0;
-  border-right: 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: inherit;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    padding: 18px 18px 17px 18px;
-    background-color: #1d2123;
-    border-radius: 4px;
-    border: 0;
-  }
 }

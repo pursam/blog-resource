@@ -9,7 +9,7 @@ const Footer = (props: Props) => {
   return (
     <footer>
       <Box className="footer-bar">
-        <h2 className="footer-bar__title">Новые материалы</h2>
+        <h2 className="footer-bar__title">Информация и контакты</h2>
         <div className="footer-bar__wrap">
           <div className="footer-bar-item">
             <img className="footer-bar-item__image" src={logo} alt="404" />
