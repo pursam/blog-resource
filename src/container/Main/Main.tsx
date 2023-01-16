@@ -1,24 +1,21 @@
 import React from "react";
-import Box from "@mui/material/Box";
-import Slider from "components/Slider/Slider";
-import ArticleCard from "components/ArticleCards/ArticleCard";
+import { Routes, Route } from "react-router-dom";
+import Home from "../../pages/Home/Home";
 
 import "./Main.scss";
-
-import articles from "components/Articles/ArticlesData";
 
 type Props = {};
 
 const Main = (props: Props) => {
   return (
     <main>
-      <Slider />
-      <div className="divider" />
-      <Box className="card-box">
-        {articles.map(
-          (a, i) => i > 4 && i < 8 && <ArticleCard el={a} key={i} />
-        )}
-      </Box>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/article" element={} />
+        <Route path="/contacts" element={} />
+        <Route path="/about" element={} />
+        <Route path="/favorite" element={} /> */}
+      </Routes>
     </main>
   );
 };
