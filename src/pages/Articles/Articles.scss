@@ -1,0 +1,102 @@
+.grid-tags {
+  display: grid;
+  width: 50%;
+  gap: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  grid-template-areas:
+    "a a b b"
+    "c d d e";
+  &__item {
+    border: none;
+    font-style: inherit;
+    font-weight: bold;
+    color: #1d2123;
+
+    padding: 10px;
+    background-color: #e7cd3b;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: white;
+      background-color: #1d2123;
+    }
+  }
+  &__item--a {
+    grid-area: a;
+  }
+  &__item--b {
+    grid-area: b;
+  }
+  &__item--c {
+    grid-area: c;
+  }
+  &__item--d {
+    grid-area: d;
+  }
+  &__item--e {
+    grid-area: e;
+  }
+}
+
+.articles-list {
+  display: flex;
+  position: relative;
+  height: 350px;
+  background-color: #1d2123;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+  &__wrap-left {
+    display: block;
+    padding: 25px;
+    width: 40%;
+  }
+  &__wrap-right {
+    padding: 25px;
+    width: 60%;
+    p {
+    }
+  }
+  &__image-item {
+    width: 100%;
+    height: 100%;
+  }
+  &__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  &__open {
+    position: absolute;
+    background-color: rgb(88, 88, 88);
+    padding: 15px;
+    bottom: 35px;
+    right: 50px;
+    transition: color 0.5s ease-in-out;
+    &:hover {
+      color: white;
+    }
+  }
+}
+.divider {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  margin: 30px 0;
+  background-color: #757575;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    top: -1px;
+    left: 50%;
+    margin: 0 0 0 -30px;
+    background-color: #e7cd3b;
+    clear: both;
+  }
+}

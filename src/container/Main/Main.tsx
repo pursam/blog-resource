@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../../pages/Home/Home";
+import Articles from "../../pages/Articles/Articles";
 
 import "./Main.scss";
 
@@ -11,8 +12,8 @@ const Main = (props: Props) => {
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/article" element={} />
-        <Route path="/contacts" element={} />
+        <Route path="/articles" element={<Articles />} />
+        {/* <Route path="/contacts" element={} />
         <Route path="/about" element={} />
         <Route path="/favorite" element={} /> */}
       </Routes>

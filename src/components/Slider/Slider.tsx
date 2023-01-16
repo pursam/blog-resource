@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import slides from "./SlideData";
-import articles from "components/Articles/ArticlesData";
+import articles from "pages/Articles/ArticlesData";
 import "./Slider.scss";
 
 type Props = {};

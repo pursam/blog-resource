@@ -2,7 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Slider from "components/Slider/Slider";
 import ArticleCard from "components/ArticleCards/ArticleCard";
-import articles from "components/Articles/ArticlesData";
+import articles from "pages/Articles/ArticlesData";
 
 type Props = {};
 
