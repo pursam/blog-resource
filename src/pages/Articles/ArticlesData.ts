@@ -1,4 +1,5 @@
 type Article = {
+  id: number;
   name: string;
   image: string;
   tags: string;
@@ -7,24 +8,28 @@ type Article = {
 
 const articles: Article[] = [
   {
+  id: 1,
   name: 'Aenean tortor vitae diam ornare',
   image: 'images/articlesImage/article01.jpg',
   tags: 'travel',
   article: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odit quisquam id. Aliquam quas impedit consequuntur nam, quod delectus. Cumque dolorum perferendis impedit ab est quibusdam incidunt dicta amet? Aliquam tempore maxime repellat harum eos, laborum est eum velit quisquam vero quibusdam modi quidem aspernatur nihil quasi quis ullam totam iure vel debitis unde. Nesciunt ab repudiandae veritatis illo labore provident, aspernatur quis assumenda culpa consequatur ipsam, sequi itaque nostrum dicta? Fugiat eos sapiente tempore sunt, cum laborum aliquam ipsa consequuntur mollitia sit doloribus fuga at repudiandae quo quia dolor reiciendis optio in. Possimus, dolorem officiis nam vero minima incidunt sit ipsum quam inventore nemo dignissimos est aspernatur saepe iste tenetur blanditiis nesciunt in assumenda iure ut voluptatibus perferendis! Minus corporis obcaecati dolorem culpa odit placeat asperiores possimus laborum exercitationem consequuntur distinctio explicabo nobis voluptatem temporibus dolorum molestias eos, molestiae corrupti quos inventore nam, enim, labore iure excepturi. Commodi odit veritatis illo, expedita enim illum cumque provident reiciendis, necessitatibus sunt similique dicta maxime quasi eos corrupti vel quas quam aut voluptates? Quaerat laboriosam non quia officiis molestiae facere odit voluptas, voluptatem earum sunt quas a ducimus amet cum obcaecati, iste soluta eius quam assumenda necessitatibus quis ullam. Nihil impedit fuga id nulla excepturi labore fugiat neque nisi aliquid esse voluptas, tempora beatae! Officia dolores expedita odio eum soluta vero iure. Cumque, dicta beatae omnis illum et rerum perspiciatis minima nemo totam, accusamus saepe quo quidem dolorem mollitia error quod iure architecto, sed dolore est sapiente deleniti magni molestias atque? Optio.',
   },
   {
+  id: 2,
   name: 'Vestibulum odio facilisis ultrices ullamcorper dolor',
   image: 'images/articlesImage/article02.jpg',
   tags: 'photography',
   article: 'Sint minus explicabo, laboriosam corrupti optio sequi dignissimos deleniti! Vitae autem, quam accusantium, praesentium molestiae incidunt optio numquam ea cumque ullam consequuntur atque ut dolore eos libero perferendis sequi laborum nulla labore illum totam perspiciatis eligendi mollitia ex. Magnam quis facere tenetur adipisci quisquam ab nam omnis saepe rem ducimus, eum porro dolores maxime quia tempore alias totam? Aspernatur harum dolorem odio ullam. Et maiores illum minima rem! Eius sapiente veniam a placeat! Praesentium culpa earum eaque quam ut consectetur doloremque veritatis molestiae, dolore repudiandae ipsam alias tenetur ipsum iure eveniet illum dolorum dignissimos, molestias esse cumque modi nostrum, architecto dolorem. Quasi quaerat blanditiis quae consequuntur at doloribus nihil voluptates, perferendis suscipit illo sapiente quas ipsa laboriosam corporis beatae obcaecati. Aperiam suscipit molestias eveniet repellendus veniam distinctio beatae nam minus quod unde. Omnis excepturi rerum illum tempore quam, aperiam qui adipisci reiciendis corrupti, itaque maxime iste laboriosam vel nam, eos illo quis sed doloremque sint? Illum quo nesciunt inventore consequuntur accusantium sit aliquid labore, tempora harum, sunt omnis rerum ad maxime doloremque temporibus ex quaerat ratione esse beatae corporis unde explicabo voluptas? Numquam blanditiis, sint pariatur aperiam quam deserunt repellendus! Eius mollitia possimus at velit culpa ullam omnis atque laborum architecto. Animi dolorem atque nisi placeat, dolores tempore illo cumque est? Eos blanditiis dolorum vel molestias necessitatibus tempora ipsum exercitationem repudiandae neque aliquam velit voluptates libero laborum, fuga accusantium quisquam consequuntur quaerat eveniet. Officia doloremque quaerat recusandae, harum totam sapiente. Placeat similique doloribus amet perferendis id eligendi, labore corporis fugiat!',
   },
   {
+  id: 3,
   name: 'Aenean ipsum primis in faucibus',
   image: 'images/articlesImage/article03.jpg',
   tags: 'people',
   article: 'Iste, dignissimos quidem at labore saepe, pariatur recusandae quasi aut culpa possimus sed? Libero, mollitia voluptas! Eaque enim quo voluptatem mollitia nihil neque et porro, necessitatibus labore, in exercitationem sunt iusto voluptate at debitis fugiat fuga officia voluptatibus. Nobis, accusamus minima quia dolorem, fugit aspernatur ullam quaerat sequi totam veritatis quam asperiores laborum eligendi possimus mollitia, tenetur quod perferendis ea iste omnis. Quia odit maxime ducimus ad suscipit, molestias dicta voluptates odio exercitationem nesciunt molestiae libero, reprehenderit aliquid at corporis totam obcaecati culpa optio quod inventore? Rem cumque eum officia maxime eos praesentium doloribus impedit asperiores perspiciatis sed amet dolorum excepturi fugiat totam suscipit deserunt, soluta illum corrupti quo sequi animi laboriosam mollitia! Cum, porro ullam doloribus tempore modi nulla eius eaque accusamus! Aspernatur eligendi, facilis doloremque, dolorem expedita reiciendis quasi dolore deserunt repellat, quia ipsum quo consequuntur! Facere dolor placeat corrupti minima, labore ea aliquam quisquam in nesciunt laudantium quibusdam inventore. Alias vel laboriosam qui hic tempore voluptates, nihil cupiditate quas earum aspernatur iusto laborum atque ullam nam sit nostrum explicabo velit tempora voluptas quaerat in? Alias dolores dolor consequatur autem delectus ad dolorem! Esse omnis modi dolorum assumenda fuga quam officiis magnam similique eius exercitationem temporibus reiciendis nobis molestias necessitatibus laboriosam qui, non at vel id asperiores doloremque. At nihil harum odio illo itaque, laborum soluta dolorem adipisci tenetur corrupti ea, magnam reiciendis iure quod tempore id officia aperiam! Ipsum, quas fugiat rem quisquam nostrum accusantium nesciunt sapiente cumque reiciendis facilis deserunt voluptatum harum? Deserunt, vitae. Amet, obcaecati.',
   },
   {
+  id: 4,
   name: 'Quisque vitae enim nec gravida',
   image: 'images/articlesImage/article04.jpg',
   tags: 'lifestyle',
@@ -33,12 +38,14 @@ const articles: Article[] = [
 
   //вверху для слайдов, а внизу сам еще по *2* статьи минимум каждой категории придумать самому
   {
+  id: 5,
   name: 'Eveniet eius illo molestiae',
   image: 'images/articlesImage/article05.jpg',
   tags: 'travel',
   article: 'Nobis at earum voluptate quam doloribus maxime ea voluptas quos, aspernatur voluptatem veniam saepe quas nam repellat quibusdam. Cum nisi delectus consequuntur vero tempora officiis earum odio aliquid quaerat vel sunt harum adipisci at minus ea cupiditate, quis consectetur asperiores dolores possimus. Iusto eum ullam numquam? Corporis necessitatibus officia laboriosam neque ipsam consequuntur quaerat dolore atque, obcaecati asperiores consequatur deserunt et reprehenderit? Exercitationem quisquam, modi ut eveniet illum sit autem itaque tempore assumenda fuga cumque, explicabo aperiam pariatur quis quae culpa harum atque vel soluta labore, maxime nesciunt. Sapiente delectus qui quibusdam. Iste explicabo enim laborum rerum facere eum optio? Debitis molestias illo molestiae dolores maxime rem pariatur repudiandae assumenda! Assumenda iusto natus voluptatem ut. Veritatis velit quibusdam dolor maiores ut quaerat impedit quae repellendus cumque! Velit tempore earum voluptatibus ab debitis voluptate amet, veniam explicabo reprehenderit delectus officiis aspernatur consequatur labore ex fugiat sequi doloremque adipisci accusantium voluptatum consectetur vero a rem reiciendis. Esse, dignissimos excepturi! In omnis nam recusandae similique nulla unde voluptatum sint reprehenderit, asperiores quos, ratione maxime? Minus aperiam sapiente expedita quo, repellendus perferendis. Labore in dolore laborum aut eveniet, accusamus voluptatem mollitia unde perferendis? Sint, aperiam voluptatibus fugit ex necessitatibus quas neque perspiciatis ratione vitae odit nihil, inventore labore, doloremque praesentium deleniti voluptatem repellendus repudiandae alias modi amet! Pariatur dolor est odio qui corrupti, molestiae cum incidunt earum quas, labore eius, nihil sed laboriosam eum nobis. Laborum, necessitatibus reiciendis, debitis amet placeat velit commodi pariatur dolor consequuntur, distinctio sunt laboriosam dignissimos et? Tempore, perspiciatis beatae.',
   },
   {
+  id: 6,
   name: 'Sint consequatur unde repellendus',
   image: 'images/articlesImage/article06.jpg',
   tags: 'travel',
@@ -46,6 +53,7 @@ const articles: Article[] = [
   },
 
   {
+  id: 7,
   name: 'Distinctio praesentium voluptate inventore',
   image: 'images/articlesImage/article07.webp',
   tags: 'photography',
@@ -53,30 +61,35 @@ const articles: Article[] = [
   },
 
   {
+  id: 8,
   name: 'At veritatis quis quibusdam',
   image: 'images/articlesImage/article09.jpg',
   tags: 'people',
   article: 'Tempora labore, optio error neque alias eos veritatis, cupiditate minima blanditiis, vitae voluptatibus fugiat rem! Tempore omnis quae ex exercitationem doloribus. Repudiandae reprehenderit doloremque ea consectetur consequuntur porro ab aliquid aspernatur laborum est exercitationem nesciunt, adipisci accusantium atque quae, esse fugiat! Doloremque, recusandae eaque incidunt, quo dolorem dolores a debitis quidem perspiciatis iste voluptatum aliquid mollitia maxime rem nihil nam delectus, dignissimos quae! Labore assumenda modi odit illum adipisci, quo necessitatibus sapiente eligendi voluptas deleniti! Dolorum, quis assumenda! Suscipit debitis autem inventore, eos libero corporis sequi consequuntur optio enim sint odit adipisci deserunt sit ex tenetur perferendis quae nobis repellendus aliquid voluptate, ipsam maxime magnam ab! Voluptates nihil ipsa natus voluptas perspiciatis, eum fugit tempora corporis distinctio molestiae assumenda quod? Saepe hic officiis illo alias maxime animi cupiditate quo voluptatem ducimus commodi totam cum voluptate consequatur qui facilis nihil labore, accusamus sunt ea perferendis ipsa autem fugit dolor et? Repudiandae iusto, tenetur, vel dolor cum perspiciatis sunt animi molestiae deleniti impedit voluptates velit voluptate distinctio perferendis quis omnis voluptatibus culpa commodi cumque excepturi? Sapiente pariatur autem quasi incidunt! A adipisci quam harum nemo nam ullam voluptatibus, consequatur quod aliquid neque et voluptas sequi expedita provident mollitia. Facilis tempore ab fuga cum tenetur, laboriosam consectetur sunt consequatur vitae laudantium natus earum porro aperiam ipsum numquam magnam odit distinctio? Quas atque, dolorem quasi, natus quaerat laborum rem ad minus quibusdam reiciendis aliquam. Unde sequi maiores voluptate deserunt, numquam beatae? In ad modi dignissimos. Quo enim molestias totam ex dolore expedita vel velit.',
   },
   {
+  id: 9,
   name: 'Similique dolores ad ea',
   image: 'images/articlesImage/article08.jpg',
   tags: 'photography',
   article: 'Consequatur voluptatibus necessitatibus repellendus amet beatae animi molestias temporibus vitae enim tempore, inventore, voluptatum atque libero illo nemo sint. Fugiat numquam eveniet sint, incidunt accusantium voluptatibus eius inventore velit. Ab eius facilis omnis quis eaque quo dignissimos ipsa perspiciatis quaerat saepe quisquam odio enim, pariatur ad fugit officia? Facere modi quos magnam fugit obcaecati error ut accusantium nobis aperiam? Adipisci et natus, rem eligendi consectetur impedit dolore perferendis ullam sint odio voluptatum voluptas nisi fugiat minima aut explicabo necessitatibus facere! Doloremque necessitatibus, laboriosam praesentium pariatur minima dolor itaque ea! Eius, autem! Sequi officiis reiciendis optio! Ducimus aliquid impedit totam fuga ea reprehenderit eos labore at et! Minus voluptatibus, minima maxime animi culpa, nam, omnis rem dicta ab excepturi voluptate consequatur! Optio voluptatibus impedit ipsam facilis totam libero eaque? Dolore quam excepturi repellendus et corporis tempore deleniti facere voluptatibus debitis expedita, ad nam animi officia porro aliquam optio dolores perspiciatis iste? Consectetur nobis voluptate amet cum dolorem minima, consequuntur ea tenetur blanditiis laudantium porro ipsum omnis reiciendis numquam nesciunt possimus corporis praesentium? Nam saepe autem voluptatibus corporis repellendus officiis, magnam consectetur vel repellat qui dolorum architecto? Deleniti assumenda perferendis delectus atque ipsum adipisci iure, quisquam explicabo ut aliquid dolorum dolore quis. Placeat provident ipsa iste numquam consequatur a error itaque. In enim quae quis voluptatem qui labore nisi iusto non quas? Quas, quisquam quam voluptatibus pariatur odit exercitationem facere cum soluta molestias itaque repellat alias nobis modi! Adipisci impedit velit, aliquam dolorum doloremque perferendis veniam a, dolor quisquam omnis reprehenderit praesentium.',
   },
   {
+  id: 10,
   name: 'Quaerat, nostrum! Sapiente, magni',
   image: 'images/articlesImage/article10.jpg',
   tags: 'people',
   article: 'Magni asperiores veniam in commodi minima ipsum repellendus esse harum aliquid omnis, voluptates consectetur amet quos, excepturi odio cumque ratione dicta doloremque, voluptate deserunt neque! Autem, voluptate quod inventore voluptatem repellat illum soluta minus laudantium quam blanditiis repudiandae, veritatis molestiae nihil illo. Laboriosam odio exercitationem voluptas dolor reprehenderit qui id temporibus cumque, libero at eos fugiat esse autem quasi cupiditate cum obcaecati porro ullam quibusdam, officiis, quae delectus est vitae. Illo voluptatem consequatur reprehenderit hic dolores. Asperiores temporibus laborum impedit optio, voluptate, culpa quaerat repellendus tempora nulla vel quos earum delectus consequuntur nostrum, ipsam facilis tenetur itaque ipsa ad consectetur. Velit magni officiis quasi architecto optio autem, nisi laborum possimus repellat dolor perspiciatis assumenda! Assumenda quidem animi perspiciatis repudiandae ut in suscipit natus, ratione, nam vitae veritatis, maxime ipsum voluptas similique quos quasi incidunt. Vel odit molestiae reiciendis placeat tenetur quos aliquid debitis, explicabo accusantium maiores optio non amet! Soluta hic rem ipsam rerum nemo aliquam laudantium perferendis beatae eaque ducimus possimus vero omnis cumque deserunt dolores voluptatum reiciendis, officiis libero in eum vitae. Necessitatibus ex quae, obcaecati eveniet ratione facere. Hic voluptatibus quam recusandae deserunt corporis, numquam, omnis esse repellat commodi assumenda accusamus fugiat id eveniet dicta. Dolor aperiam, ullam sunt provident reprehenderit maiores aliquam error aspernatur, eveniet illo consequatur laudantium nihil tempore repellat iure, beatae sequi possimus veniam. Quidem cupiditate sequi facilis eius molestias quisquam sapiente aliquam, dolorem enim ullam asperiores dolores reiciendis perferendis et velit illum maxime, explicabo animi nemo quo fugit modi iste. Nostrum, modi fugiat.',
   },
   {
+  id: 11,
   name: 'Numquam nam necessitatibus nesciunt',
   image: 'images/articlesImage/article11.jpg',
   tags: 'lifestyle',
   article: 'Molestiae ullam asperiores aperiam sed eveniet nulla delectus explicabo perferendis magnam, suscipit odio ipsa saepe incidunt facere, vel iste quasi aspernatur? Cumque nam obcaecati enim sequi doloremque tenetur ab id eveniet veritatis, nostrum, culpa ut ad facere esse commodi hic? Corrupti minima dicta ab culpa delectus similique fuga exercitationem necessitatibus voluptatum voluptas odio explicabo mollitia saepe et numquam magnam sint fugiat, cum rem ad dolore nobis voluptate. Rerum laborum minima fuga illum rem sit id, optio deleniti nobis dolorum iusto excepturi iste harum maiores molestiae. A quasi aliquid, magni libero perspiciatis voluptas odio temporibus blanditiis. Excepturi, veritatis sequi deleniti repellat quisquam, maxime, perspiciatis error assumenda quaerat dolor quae corporis placeat vel suscipit iste quasi beatae tenetur aliquid aspernatur labore iure omnis hic! Esse nihil iure inventore illo deserunt quae commodi ipsum voluptas ipsa ab perspiciatis impedit quis voluptatibus aspernatur eos accusamus, recusandae fugit aperiam obcaecati, velit dignissimos ipsam culpa. Sit pariatur sint et eius explicabo. Necessitatibus excepturi, atque corporis tempora nemo sint, totam aliquam eveniet quod porro nesciunt pariatur inventore. Illo similique eos molestiae vero excepturi laboriosam, quia quaerat, dicta nobis earum repellendus voluptatibus ratione. Pariatur obcaecati, quaerat tenetur eveniet, minima rerum error cum iusto soluta, aut quis quo. Pariatur, libero rem? Provident dolorem aliquam non repellendus nemo impedit voluptas dicta molestiae, similique unde illo sapiente repellat neque deleniti placeat iste. Laborum at et quo doloremque! Perferendis assumenda porro veritatis pariatur aperiam maxime ut eveniet, magnam est harum enim eligendi tempora placeat rem obcaecati commodi eaque nobis culpa unde error?',
   },
   {
+  id: 12,
   name: 'Unde facilis odio soluta',
   image: 'images/articlesImage/article12.jpg',
   tags: 'lifestyle',

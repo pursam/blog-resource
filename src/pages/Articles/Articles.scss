@@ -1,3 +1,4 @@
+$padding-border: 20px;
 .grid-tags {
   display: grid;
   width: 50%;
@@ -40,48 +41,87 @@
     grid-area: e;
   }
 }
-
-.articles-list {
-  display: flex;
-  position: relative;
-  height: 350px;
-  background-color: #1d2123;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 15px;
-
-  &__wrap-left {
-    display: block;
-    padding: 25px;
-    width: 40%;
-  }
-  &__wrap-right {
-    padding: 25px;
-    width: 60%;
-    p {
-    }
-  }
-  &__image-item {
-    width: 100%;
-    height: 100%;
-  }
-  &__image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-  &__open {
-    position: absolute;
-    background-color: rgb(88, 88, 88);
+.articles-grid-wrap {
+  .articles-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 15px;
-    bottom: 35px;
-    right: 50px;
-    transition: color 0.5s ease-in-out;
-    &:hover {
+    height: 350px;
+    background-color: #1d2123;
+    border-radius: 10px;
+    // overflow: hidden;
+    margin-bottom: 15px;
+
+    &__wrap-bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 15%;
+    }
+    &__wrap-top {
+      display: flex;
+      flex-direction: row;
+      height: calc(85% - $padding-border);
+      margin-bottom: $padding-border;
+    }
+    &__title {
+      margin-top: 0;
       color: white;
+      text-transform: uppercase;
+    }
+    &__image-item {
+      display: block;
+      width: 40%;
+      line-height: 0;
+      height: 100%;
+      overflow: hidden;
+      //test
+      background-color: grey;
+    }
+    &__image {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    &__description {
+      width: 60%;
+      margin-left: $padding-border;
+    }
+    &__open {
+      background-color: rgb(88, 88, 88);
+      padding: 15px;
+      bottom: 35px;
+      right: 50px;
+      transition: color 0.5s ease-in-out;
+      &:hover {
+        color: white;
+      }
+    }
+    .actions {
+      display: flex;
+      gap: 15px;
+      color: #8a8a8a;
+      // bottom: 0;
+      &__btn {
+        padding: 0;
+        color: inherit;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: white;
+        }
+      }
+      &__icon {
+        color: inherit;
+        font-size: 40px;
+      }
+      &__icon-like {
+        color: inherit;
+      }
     }
   }
 }
+
 .divider {
   position: relative;
   width: 100%;

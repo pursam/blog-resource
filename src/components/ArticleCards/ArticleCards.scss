@@ -14,13 +14,14 @@
 }
 .card-actions {
   bottom: 0;
+  &__icon {
+    color: white;
+  }
+  &__icon-like {
+    color: red;
+  }
 }
-.card-actions__icon {
-  color: white;
-}
-.card-actions__icon-like {
-  color: red;
-}
+
 .card-tag-link {
   display: flex;
   flex-direction: column;
