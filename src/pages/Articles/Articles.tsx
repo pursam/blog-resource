@@ -13,31 +13,30 @@ type Props = {};
 
 const Articles = (props: Props) => {
   const [choiceTag, setChoiceTag] = React.useState("");
-  const choiceTravel = () => {
-    setChoiceTag("travel");
-  };
-  const choicePhotography = () => {
-    setChoiceTag("photography");
-  };
-  const choicePeople = () => {
-    setChoiceTag("people");
-  };
-  const choiceLifestyle = () => {
-    setChoiceTag("lifestyle");
-  };
-  const ChoiceFavorite = () => {
-    setChoiceTag("favorite");
-  };
+  // const choiceTravel = () => {
+  //   setChoiceTag("travel");
+  // };
+  // const choicePhotography = () => {
+  //   setChoiceTag("photography");
+  // };
+  // const choicePeople = () => {
+  //   setChoiceTag("people");
+  // };
+  // const choiceLifestyle = () => {
+  //   setChoiceTag("lifestyle");
+  // };
+  // const choiceFavorite = () => {
+  //   setChoiceTag("favorite");
+  // };
 
   return (
     <Box>
-      <GridTags
-        choiceTravel={choiceTravel}
-        choicePhotography={choicePhotography}
-        choicePeople={choicePeople}
-        choiceLifestyle={choiceLifestyle}
-        ChoiceFavorite={ChoiceFavorite}
-      />
+      <GridTags />
+      {/* choiceTravel={choiceTravel}
+      choicePhotography={choicePhotography}
+      choicePeople={choicePeople}
+      choiceLifestyle={choiceLifestyle}
+      choiceFavorite={choiceFavorite} />*/}
 
       <Box>
         {articles.map(

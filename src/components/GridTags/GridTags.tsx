@@ -4,20 +4,19 @@ import { NavLink } from "react-router-dom";
 import "./GridTags.scss";
 
 type Props = {
-  choiceTravel: any;
-  choicePhotography: any;
-  choicePeople: any;
-  choiceLifestyle: any;
-  ChoiceFavorite: any;
+  // choiceTravel: any;
+  // choicePhotography: any;
+  // choicePeople: any;
+  // choiceLifestyle: any;
+  // ChoiceFavorite: any;
 };
 
-const GridTags = ({
-  choiceTravel,
-  choicePhotography,
-  choicePeople,
-  choiceLifestyle,
-  ChoiceFavorite,
-}: Props) => {
+const GridTags = ({}: // choiceTravel,
+// choicePhotography,
+// choicePeople,
+// choiceLifestyle,
+// ChoiceFavorite,
+Props) => {
   return (
     <div className="grid-tags">
       <NavLink
@@ -28,9 +27,9 @@ const GridTags = ({
             : "grid-tags__item grid-tags__item--a"
         }
       >
-        <button onClick={choiceTravel} className="grid-tags__btn">
-          #Travel
-        </button>
+        {/* <button onClick={choiceTravel} className="grid-tags__btn"> */}
+        #Travel
+        {/* </button> */}
       </NavLink>
       <NavLink
         to="articles/photography"
@@ -40,9 +39,9 @@ const GridTags = ({
             : "grid-tags__item grid-tags__item--b"
         }
       >
-        <button onClick={choicePhotography} className="grid-tags__btn">
-          #Photography
-        </button>
+        {/* <button onClick={choicePhotography} className="grid-tags__btn"> */}
+        #Photography
+        {/* </button> */}
       </NavLink>
       <NavLink
         to="articles/people"
@@ -52,9 +51,9 @@ const GridTags = ({
             : "grid-tags__item grid-tags__item--c"
         }
       >
-        <button onClick={choicePeople} className="grid-tags__btn">
-          #People
-        </button>
+        {/* <button onClick={choicePeople} className="grid-tags__btn"> */}
+        #People
+        {/* </button> */}
       </NavLink>
       <NavLink
         to="articles/lifestyle"
@@ -64,9 +63,9 @@ const GridTags = ({
             : "grid-tags__item grid-tags__item--d"
         }
       >
-        <button onClick={choiceLifestyle} className="grid-tags__btn">
-          #Lifestyle
-        </button>
+        {/* <button onClick={choiceLifestyle} className="grid-tags__btn"> */}
+        #Lifestyle
+        {/* </button> */}
       </NavLink>
       <NavLink
         to="article/favorite"
@@ -76,9 +75,9 @@ const GridTags = ({
             : "grid-tags__item grid-tags__item--e"
         }
       >
-        <button onClick={ChoiceFavorite} className="grid-tags__btn">
-          &#x2764; Favorite
-        </button>
+        {/* <button onClick={ChoiceFavorite} className="grid-tags__btn"> */}
+        &#x2764; Favorite
+        {/* </button> */}
       </NavLink>
     </div>
   );
