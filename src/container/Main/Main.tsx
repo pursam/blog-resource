@@ -4,6 +4,7 @@ import Home from "../../pages/Home/Home";
 import Articles from "../../pages/Articles/Articles";
 
 import "./Main.scss";
+import Travel from "pages/Articles/Travel/Travel";
 
 type Props = {};
 
@@ -12,7 +13,8 @@ const Main = (props: Props) => {
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/articles" element={<Articles />} />
+        <Route path="articles" element={<Articles />} />
+        <Route path="articles/travel" element={<Travel />} />
         {/* <Route path="/contacts" element={} />
         <Route path="/about" element={} />
         <Route path="/favorite" element={} /> */}

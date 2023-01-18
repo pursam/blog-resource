@@ -11,13 +11,13 @@ const Header = (props: Props) => {
   return (
     <header>
       <Box sx={{ flexGrow: 1 }} className="header-logo">
-        <a href="#" className="header-logo__link">
+        <div className="header-logo__link">
           <img
             src={picture}
             alt="header-logo.png"
             className="header-logo__image"
           />
-        </a>
+        </div>
       </Box>
       <AppBar />
     </header>
