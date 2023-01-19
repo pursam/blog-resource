@@ -1,16 +1,16 @@
 import React from "react";
 import { Box } from "@mui/material";
-import articles from "./ArticlesData";
+import articles from "../Articles/ArticlesData";
 import ArticleItem from "components/ArticleItem/ArticleItem";
 import GridTags from "components/GridTags/GridTags";
 import Divider from "components/Divider/Divider";
 
-import "./Articles.scss";
+import "./Lifestyle.scss";
 
 type Props = {};
 
-const Articles = (props: Props) => {
-  const choiceTag = "";
+const Lifestyle = (props: Props) => {
+  const choiceTag = "lifestyle";
 
   return (
     <Box>
@@ -26,4 +26,4 @@ const Articles = (props: Props) => {
     </Box>
   );
 };
-export default Articles;
+export default Lifestyle;

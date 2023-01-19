@@ -9,6 +9,8 @@ import "./App.scss";
 type Props = {};
 
 const App = (props: Props) => {
+  const [likes, setLikes] = React.useState([]);
+
   return (
     <StyledEngineProvider injectFirst>
       <div className="background background__image" />
@@ -16,7 +18,7 @@ const App = (props: Props) => {
       <CssBaseline />
       <Container maxWidth="lg" className="main-container">
         <Header />
-        <Main />
+        <Main setLikes={setLikes} />
         <Footer />
       </Container>
     </StyledEngineProvider>

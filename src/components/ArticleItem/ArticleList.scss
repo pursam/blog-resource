@@ -44,11 +44,32 @@ $padding-border: 20px;
     width: 60%;
     margin-left: $padding-border;
   }
+  &__tag {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    padding: 5px;
+    color: white;
+    background-color: #e7cd3b;
+    border-radius: 5px;
+    text-align: center;
+
+    margin-left: 225px;
+    margin-top: auto;
+
+    & > span {
+      color: inherit;
+    }
+  }
+
   &__open {
     background-color: rgb(88, 88, 88);
     padding: 15px;
     bottom: 35px;
-    right: 50px;
+    // right: 50px;
+    margin-left: 565px;
     transition: color 0.5s ease-in-out;
     &:hover {
       color: white;

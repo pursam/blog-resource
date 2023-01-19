@@ -40,6 +40,10 @@ const ArticleItem = ({ el }: Props) => {
             <ShareIcon className="actions__icon" />
           </IconButton>
         </div>
+        <div className="articles-list__tag">
+          <span>{"#" + el.tags}</span>{" "}
+        </div>
+
         <Link
           to={"/articles/" + el.id.toString()}
           className="articles-list__open"

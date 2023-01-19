@@ -1,17 +1,16 @@
 import React from "react";
 import { Box } from "@mui/material";
-import articles from "./ArticlesData";
+import articles from "../Articles/ArticlesData";
 import ArticleItem from "components/ArticleItem/ArticleItem";
 import GridTags from "components/GridTags/GridTags";
 import Divider from "components/Divider/Divider";
 
-import "./Articles.scss";
+import "./Photography.scss";
 
 type Props = {};
 
-const Articles = (props: Props) => {
-  const choiceTag = "";
-
+const Photography = (props: Props) => {
+  const choiceTag = "photography";
   return (
     <Box>
       <GridTags />
@@ -26,4 +25,5 @@ const Articles = (props: Props) => {
     </Box>
   );
 };
-export default Articles;
+
+export default Photography;
