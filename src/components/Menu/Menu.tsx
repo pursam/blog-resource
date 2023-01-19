@@ -31,16 +31,16 @@ function Menu({}: Props) {
 
           {page.name === "РАЗДЕЛЫ" && (
             <div className="dropdown-wrap">
-              <Link to="/articles" className="dropdown-wrap__item">
+              <Link to="/travel" className="dropdown-wrap__item">
                 Travel
               </Link>
-              <Link to="/articles" className="dropdown-wrap__item">
+              <Link to="/photography" className="dropdown-wrap__item">
                 Photography
               </Link>
-              <Link to="/articles" className="dropdown-wrap__item">
+              <Link to="/people" className="dropdown-wrap__item">
                 People
               </Link>
-              <Link to="/articles" className="dropdown-wrap__item">
+              <Link to="/lifestyle" className="dropdown-wrap__item">
                 Lifestyle
               </Link>
             </div>

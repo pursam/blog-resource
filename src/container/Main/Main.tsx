@@ -8,25 +8,26 @@ import Travel from "pages/Travel/Travel";
 import Photography from "pages/Photography/Photography";
 import People from "pages/People/People";
 import Lifestyle from "pages/Lifestyle/Lifestyle";
+import Favorite from "pages/Favorite/Favorite";
 
 type Props = {};
 
-const Main = ({ setLikes }: Props) => {
+const Main = ({}: Props) => {
+  const user = {
+    favorite: ["5", "8", "11"],
+  };
   return (
     <main>
       <Routes>
-        <Route path="/" element={<Home setLikes={setLikes} />} />
-        <Route path="articles" element={<Articles setLikes={setLikes} />} />
-        <Route path="travel" element={<Travel setLikes={setLikes} />} />
-        <Route
-          path="photography"
-          element={<Photography setLikes={setLikes} />}
-        />
-        <Route path="people" element={<People setLikes={setLikes} />} />
-        <Route path="lifestyle" element={<Lifestyle setLikes={setLikes} />} />
+        <Route path="/" element={<Home />} />
+        <Route path="articles" element={<Articles />} />
+        <Route path="travel" element={<Travel />} />
+        <Route path="photography" element={<Photography />} />
+        <Route path="people" element={<People />} />
+        <Route path="lifestyle" element={<Lifestyle />} />
         {/* <Route path="/contacts" element={} />
-        <Route path="/about" element={} />
-        <Route path="/favorite" element={} /> */}
+        <Route path="/about" element={} />*/}
+        <Route path="/favorite" element={<Favorite user={user} />} />
       </Routes>
     </main>
   );

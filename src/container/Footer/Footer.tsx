@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import React from "react";
 import "./Footer.scss";
 import logo from "assets/footer-logo.png";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -22,21 +23,21 @@ const Footer = (props: Props) => {
           <div className="footer-bar-item">
             <h3 className="footer-bar-item__title">Популярные тэги</h3>
             <div className="grid-tags">
-              <a href="" className="grid-tags__item-a">
+              <Link to="/travel" className="grid-tags__item-a">
                 #travel
-              </a>
-              <a href="" className="grid-tags__item-b">
+              </Link>
+              <Link to="/photography" className="grid-tags__item-b">
                 #photography
-              </a>
-              <a href="" className="grid-tags__item-c">
+              </Link>
+              <Link to="/people" className="grid-tags__item-c">
                 #people
-              </a>
-              <a href="" className="grid-tags__item-d">
+              </Link>
+              <Link to="/lifestyle" className="grid-tags__item-d">
                 #lifestyle
-              </a>
-              <a href="" className="grid-tags__item-e">
+              </Link>
+              <Link to="/favorite" className="grid-tags__item-e">
                 #favorite
-              </a>
+              </Link>
             </div>
           </div>
           <div className="footer-bar-item">
