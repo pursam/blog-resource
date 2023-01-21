@@ -18,8 +18,6 @@ type Props = {
 
 const Articles = ({ userData, handleAddToFavorite }: Props) => {
   const choiceTag = ""; //выводит все статьи
-  const [post, setPost] = React.useState(0);
-  const LinkToPost = (id: number) => setPost(id);
   return (
     <Box>
       <GridTags />
