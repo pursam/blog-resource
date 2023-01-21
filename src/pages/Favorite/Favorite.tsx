@@ -6,21 +6,30 @@ import { Box } from "@mui/material";
 import articles from "../Articles/ArticlesData";
 
 type Props = {
-  user: {
-    favorite: string[];
+  handleAddToFavorite: (id: number) => void;
+  userData: {
+    favorite: number[];
   };
 };
 
-const Favorite = ({ user }: Props) => {
+const Favorite = ({ userData, handleAddToFavorite }: Props) => {
   return (
     <Box>
       <GridTags />
       <Divider />
       <Box>
-        {articles.map((el, i) =>
+        {articles.map((el) =>
           //среди всех статей, если массив id fav совпадает с текущим айди єлемента массива то он выводится
-          user.favorite.map(
-            (fav) => el.id.toString() === fav && <ArticleItem key={i} el={el} />
+          userData.favorite.map(
+            (fav, i) =>
+              el.id === fav && (
+                <ArticleItem
+                  handleAddToFavorite={() => handleAddToFavorite(el.id)}
+                  userData={userData}
+                  key={i}
+                  el={el}
+                />
+              )
           )
         )}
       </Box>

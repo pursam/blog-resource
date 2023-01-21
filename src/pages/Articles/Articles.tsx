@@ -6,22 +6,56 @@ import GridTags from "components/GridTags/GridTags";
 import Divider from "components/Divider/Divider";
 
 import "./Articles.scss";
+import { Route, Routes } from "react-router-dom";
+import Post from "components/Post/Post";
 
-type Props = {};
+type Props = {
+  handleAddToFavorite: (id: number) => void;
+  userData: {
+    favorite: number[];
+  };
+};
 
-const Articles = (props: Props) => {
-  const choiceTag = "";
-
+const Articles = ({ userData, handleAddToFavorite }: Props) => {
+  const choiceTag = ""; //выводит все статьи
+  const [post, setPost] = React.useState(0);
+  const LinkToPost = (id: number) => setPost(id);
   return (
     <Box>
       <GridTags />
       <Divider />
       <Box>
-        {articles.map(
-          (el, i) =>
-            //Если тэг элемента содержит поисковую переменную...
-            el.tags.includes(choiceTag) && <ArticleItem key={i} el={el} />
-        )}
+        <Routes>
+          <Route
+            path=""
+            element={articles.map(
+              (el, i) =>
+                //Если тэг элемента содержит поисковую переменную...
+                el.tags.includes(choiceTag) && (
+                  <ArticleItem
+                    // LinkToPost={LinkToPost}
+                    userData={userData}
+                    handleAddToFavorite={handleAddToFavorite}
+                    key={i}
+                    el={el}
+                  />
+                )
+            )}
+          />
+          {articles.map((el, i) => (
+            <Route
+              path={"/post" + el.id.toString()}
+              element={
+                <Post
+                  userData={userData}
+                  handleAddToFavorite={handleAddToFavorite}
+                  key={i}
+                  el={el}
+                />
+              }
+            />
+          ))}
+        </Routes>
       </Box>
     </Box>
   );

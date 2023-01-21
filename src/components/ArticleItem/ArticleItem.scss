@@ -86,6 +86,9 @@ $padding-border: 20px;
       &:hover {
         color: white;
       }
+      &.active {
+        color: #f44336;
+      }
     }
     &__icon {
       color: inherit;

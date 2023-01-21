@@ -10,7 +10,7 @@ const pages: pageList [] = [
   },
   {
     name: "РАЗДЕЛЫ",
-    url: "/categories",
+    url: "",
   },
   {
     name: "CТАТЬИ",

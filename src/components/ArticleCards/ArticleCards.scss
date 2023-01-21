@@ -15,10 +15,13 @@
 .card-actions {
   bottom: 0;
   &__icon {
-    color: white;
+    color: #8a8a8a;
   }
   &__icon-like {
-    color: red;
+    color: #8a8a8a;
+    &.active {
+      color: #f44336;
+    }
   }
 }
 

@@ -7,9 +7,14 @@ import Divider from "components/Divider/Divider";
 
 import "./Travel.scss";
 
-type Props = {};
+type Props = {
+  handleAddToFavorite: (id: number) => void;
+  userData: {
+    favorite: number[];
+  };
+};
 
-const Travel = (props: Props) => {
+const Travel = ({ userData, handleAddToFavorite }: Props) => {
   const choiceTag = "travel";
 
   return (
@@ -20,7 +25,14 @@ const Travel = (props: Props) => {
         {articles.map(
           (el, i) =>
             //Если тэг элемента содержит поисковую переменную...
-            el.tags.includes(choiceTag) && <ArticleItem key={i} el={el} />
+            el.tags.includes(choiceTag) && (
+              <ArticleItem
+                userData={userData}
+                handleAddToFavorite={() => handleAddToFavorite(el.id)}
+                key={i}
+                el={el}
+              />
+            )
         )}
       </Box>
     </Box>

@@ -1,0 +1,78 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: #1d2123;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  &__wrap-top {
+  }
+  &__title {
+    font-size: 1.7rem;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__content {
+    align-items: center;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    line-height: 0;
+    background-color: grey;
+  }
+  &__text {
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+  &__wrap-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__tag {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    padding: 5px;
+    color: white;
+    background-color: #e7cd3b;
+    border-radius: 5px;
+    text-align: center;
+
+    margin-right: 50px;
+    margin-top: auto;
+
+    & > span {
+      color: inherit;
+    }
+  }
+}
+.post-actions {
+  display: flex;
+  gap: 15px;
+  color: #8a8a8a;
+  &__btn {
+    padding: 0;
+    color: inherit;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: white;
+    }
+    &.active {
+      color: #f44336;
+    }
+  }
+  &__icon {
+    color: inherit;
+    font-size: 40px;
+  }
+  &__icon-like {
+    color: inherit;
+  }
+}

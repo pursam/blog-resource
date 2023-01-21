@@ -18,14 +18,19 @@ import { red } from "@mui/material/colors";
 
 type Props = {
   el: {
+    id: number;
     name: string;
     image: string;
     tags: string;
     article: string;
   };
+  handleAddToFavorite: (id: number) => void;
+  userData: {
+    favorite: number[];
+  };
 };
 
-const articleCards = ({ el }: Props) => {
+const articleCards = ({ el, handleAddToFavorite, userData }: Props) => {
   return (
     <Card sx={{ maxWidth: 345 }} className="article-card">
       <CardHeader
@@ -56,8 +61,17 @@ const articleCards = ({ el }: Props) => {
         </Typography>
       </CardContent>
       <CardActions className="card-actions" disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon className="card-actions__icon-like" />
+        <IconButton
+          onClick={() => handleAddToFavorite(el.id)}
+          aria-label="add to favorites"
+        >
+          <FavoriteIcon
+            className={
+              userData.favorite.includes(el.id) === true
+                ? "card-actions__icon-like active"
+                : "card-actions__icon-like"
+            }
+          />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon className="card-actions__icon" />
