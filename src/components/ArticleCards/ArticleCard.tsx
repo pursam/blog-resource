@@ -1,20 +1,18 @@
 import React from "react";
 import "./ArticleCards.scss";
 
-import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
-import IconButton, { IconButtonProps } from "@mui/material/IconButton";
+import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import Avatar from "@mui/material/Avatar";
 import { red } from "@mui/material/colors";
-// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-// import MoreVertIcon from "@mui/icons-material/MoreVert";
+import { Link } from "react-router-dom";
 
 type Props = {
   el: {
@@ -42,7 +40,7 @@ const articleCards = ({ el, handleAddToFavorite, userData }: Props) => {
         className="card-header"
         title={el.name}
       />
-      <a href="" className="card-tag-link">
+      <Link to={"/" + el.tags} className="card-tag-link">
         <CardMedia
           component="img"
           height="194"
@@ -53,7 +51,7 @@ const articleCards = ({ el, handleAddToFavorite, userData }: Props) => {
         <div className="card-tag-bg">
           <h3 className="card-tag-title">{el.tags}</h3>
         </div>
-      </a>
+      </Link>
 
       <CardContent>
         <Typography variant="body2">

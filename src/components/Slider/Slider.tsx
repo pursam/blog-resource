@@ -1,9 +1,10 @@
 import React from "react";
 import { Box } from "@mui/material";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
-import slides from "./SlideData";
+// import slides from "./SlideData";
 import articles from "pages/Articles/ArticlesData";
 import "./Slider.scss";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -25,10 +26,6 @@ const Slider = (props: Props) => {
     };
   });
 
-  if (!Array.isArray(slides) || 4 <= 0) {
-    return null;
-  }
-
   return (
     <Box className="slider">
       <div className="slider__overlay" />
@@ -43,24 +40,27 @@ const Slider = (props: Props) => {
         />
       </Box>
       {articles.map((s, i) => (
-        <>
+        <React.Fragment key={i}>
           <div className={i === curr ? "slide active" : "slide"}>
             <img className="image" src={s.image} alt="slide" />
           </div>
           <div className={i === curr ? "article active" : "article"}>
             <div className="article__tagname">
-              <a href="#" className="article__tagname-link">
+              <Link to={"/" + s.tags} className="article__tagname-link">
                 {s.tags}
-              </a>
+              </Link>
             </div>
             <h1 className="article__name">{s.name}</h1>
             <div className="article__read-this">
-              <a href="#" className="article__read-this-link">
+              <Link
+                to={"/article/post" + s.id}
+                className="article__read-this-link"
+              >
                 Read this article
-              </a>
+              </Link>
             </div>
           </div>
-        </>
+        </React.Fragment>
       ))}
     </Box>
   );

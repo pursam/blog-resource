@@ -1,5 +1,5 @@
-import { Box } from "@mui/material";
 import React from "react";
+import { Box } from "@mui/material";
 import "./Footer.scss";
 import logo from "assets/footer-logo.png";
 import { Link } from "react-router-dom";

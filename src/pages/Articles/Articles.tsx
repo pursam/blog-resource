@@ -42,12 +42,12 @@ const Articles = ({ userData, handleAddToFavorite }: Props) => {
           />
           {articles.map((el, i) => (
             <Route
+              key={i}
               path={"/post" + el.id.toString()}
               element={
                 <Post
                   userData={userData}
                   handleAddToFavorite={handleAddToFavorite}
-                  key={i}
                   el={el}
                 />
               }
