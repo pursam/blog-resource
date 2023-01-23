@@ -3,8 +3,17 @@
   border-radius: 10px;
   flex-direction: row;
   margin-bottom: 30px;
+  @media (max-width: 779px) {
+    flex-direction: column;
+  }
+  &__container {
+    @media (max-width: 779px) {
+      padding: 0;
+    }
+  }
 }
 .search-button {
+  width: 40px;
   display: flexbox;
   margin-right: 17px;
   &:hover {

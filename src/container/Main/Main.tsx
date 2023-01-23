@@ -9,6 +9,7 @@ import Photography from "pages/Photography/Photography";
 import People from "pages/People/People";
 import Lifestyle from "pages/Lifestyle/Lifestyle";
 import Favorite from "pages/Favorite/Favorite";
+import Contacts from "pages/Contacts/Contacts";
 
 type Props = {};
 
@@ -98,8 +99,7 @@ const Main = (props: Props) => {
             />
           }
         />
-        {/* <Route path="/about" element={} />
-        <Route path="/contacts" element={} /> */}
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </main>
   );

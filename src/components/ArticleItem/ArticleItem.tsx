@@ -36,34 +36,35 @@ const ArticleItem = ({ el, userData, handleAddToFavorite }: Props) => {
         </div>
       </div>
       <div className="articles-item__wrap-bottom">
-        <div className="actions">
-          <IconButton
-            onClick={() => handleAddToFavorite(el.id)}
-            className={
-              userData.favorite.includes(el.id) === true
-                ? "actions__btn active"
-                : "actions__btn"
-            }
-            aria-label="add to favorites"
+        <div className="articles-item__wrap-bottom-left">
+          <div className="actions">
+            <IconButton
+              onClick={() => handleAddToFavorite(el.id)}
+              className={
+                userData.favorite.includes(el.id) === true
+                  ? "actions__btn active"
+                  : "actions__btn"
+              }
+              aria-label="add to favorites"
+            >
+              <FavoriteIcon className="actions__icon" />
+            </IconButton>
+            <IconButton className="actions__btn" aria-label="share">
+              <ShareIcon className="actions__icon" />
+            </IconButton>
+          </div>
+          <div className="articles-item__tag">
+            <span>{"#" + el.tags}</span>
+          </div>
+        </div>
+        <div className="articles-item__wrap-bottom-right">
+          <Link
+            to={"/articles/post" + el.id.toString()}
+            className="articles-item__open"
           >
-            <FavoriteIcon className="actions__icon" />
-          </IconButton>
-          <IconButton className="actions__btn" aria-label="share">
-            <ShareIcon className="actions__icon" />
-          </IconButton>
+            READ MORE
+          </Link>
         </div>
-        <div className="articles-item__tag">
-          <span>{"#" + el.tags}</span>{" "}
-        </div>
-
-        <Link
-          to={"/articles/post" + el.id.toString()}
-          className="articles-item__open"
-        >
-          {/* <button onClick={() => LinkToPost(el.id)}> */}
-          READ MORE
-          {/* </button> */}
-        </Link>
       </div>
     </div>
   );

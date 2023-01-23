@@ -21,10 +21,6 @@ const pages: pageList [] = [
     url: "/contacts",
   },
   {
-    name: "ОБО МНЕ",
-    url: "/about",
-  },
-  {
     name: "ИЗБРАННОЕ",
     url: "/favorite",
   },

@@ -6,6 +6,9 @@ $padding-border: 20px;
   justify-content: space-between;
   padding: 15px;
   height: 350px;
+  @media (max-width: 1024px) {
+    height: auto;
+  }
   background-color: #1d2123;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -13,13 +16,41 @@ $padding-border: 20px;
   &__wrap-bottom {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     height: 15%;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &__wrap-bottom-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+    // height: 15%;
+  }
+  &__wrap-bottom-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 60%;
+    @media (max-width: 1024px) {
+      width: 100%;
+      justify-content: center;
+    }
+    // height: 15%;
   }
   &__wrap-top {
     display: flex;
     flex-direction: row;
     height: calc(85% - $padding-border);
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      height: auto;
+    }
     margin-bottom: $padding-border;
   }
   &__title {
@@ -32,6 +63,10 @@ $padding-border: 20px;
     width: 40%;
     line-height: 0;
     height: 100%;
+    @media (max-width: 1024px) {
+      width: 100%;
+      height: auto;
+    }
     overflow: hidden;
     background-color: grey;
   }
@@ -43,6 +78,16 @@ $padding-border: 20px;
   &__description {
     width: 60%;
     margin-left: $padding-border;
+    @media (max-width: 1024px) {
+      width: 100%;
+      margin-left: 0;
+    }
+    p {
+      text-align: justify;
+      @media (max-width: 1024px) {
+        font-size: 0.75rem;
+      }
+    }
   }
   &__tag {
     height: 50%;
@@ -56,7 +101,6 @@ $padding-border: 20px;
     border-radius: 5px;
     text-align: center;
 
-    margin-left: 225px;
     margin-top: auto;
 
     & > span {
@@ -68,8 +112,6 @@ $padding-border: 20px;
     background-color: rgb(88, 88, 88);
     padding: 15px;
     bottom: 35px;
-    // right: 50px;
-    margin-left: 565px;
     transition: color 0.5s ease-in-out;
     &:hover {
       color: white;

@@ -16,8 +16,12 @@
     clear: both;
   }
 }
-
 .card-box {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  gap: 40px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }

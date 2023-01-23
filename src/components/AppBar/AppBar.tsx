@@ -11,7 +11,7 @@ import Menu from "../Menu/Menu";
 function ResponsiveAppBar() {
   return (
     <AppBar position="static" className="app-bar">
-      <Container maxWidth="md">
+      <Container className="app-bar__container" maxWidth="md">
         <Toolbar disableGutters className="toolbar">
           <Menu />
         </Toolbar>

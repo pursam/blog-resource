@@ -31,7 +31,6 @@ const Articles = ({ userData, handleAddToFavorite }: Props) => {
                 //Если тэг элемента содержит поисковую переменную...
                 el.tags.includes(choiceTag) && (
                   <ArticleItem
-                    // LinkToPost={LinkToPost}
                     userData={userData}
                     handleAddToFavorite={handleAddToFavorite}
                     key={i}

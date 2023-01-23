@@ -1,0 +1,123 @@
+.contact {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 40px;
+
+  background-color: white;
+  &__title {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  &__divider {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    margin: 30px 0;
+    // background-color: #757575;
+    background-color: #e7e7e7;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 3px;
+      top: -1px;
+      left: 50%;
+      margin: 0 0 0 -30px;
+      background-color: #e7cd3b;
+      clear: both;
+    }
+  }
+  &__item {
+    position: relative;
+    line-height: 1.571428571428571;
+    > input:focus ~ label,
+    > textarea:focus ~ label {
+      display: none;
+    }
+  }
+  &__input {
+    font: inherit;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    color: #404246;
+    line-height: normal;
+    transition: border-color 0.25s ease-out;
+    width: 100%;
+    border-radius: 4px;
+    border: #dadada solid 1px;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    height: 45px;
+    padding: 0 20px;
+  }
+
+  &__label {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Raleway", sans-serif;
+    line-height: 1.571428571428571;
+    box-sizing: border-box;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 0.928571em;
+    color: #9a9a9a;
+    z-index: 1;
+  }
+  &__grid-wrap {
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+      "a b c"
+      "d d d";
+    @media (max-width: 768px) {
+      grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d";
+    }
+  }
+
+  .contact__item--grid-a {
+    grid-area: a;
+  }
+  .contact__item--grid-b {
+    grid-area: b;
+  }
+  .contact__item--grid-c {
+    grid-area: c;
+  }
+  .contact__item--grid-d {
+    grid-area: d;
+  }
+  &__btn-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 15px;
+    padding: 12px 25px 11px 25px;
+    border: none;
+    border-radius: 4px;
+    background-color: #66727b;
+    transition: all 0.2s ease-in-out;
+  }
+}
+.contact__input--comment {
+  padding: 12px 15px;
+  max-width: 100%;
+  height: 20vh;
+  resize: vertical;
+  max-height: 50vh;
+}

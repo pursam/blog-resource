@@ -30,7 +30,7 @@ type Props = {
 
 const articleCards = ({ el, handleAddToFavorite, userData }: Props) => {
   return (
-    <Card sx={{ maxWidth: 345 }} className="article-card">
+    <Card className="article-card">
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -55,7 +55,7 @@ const articleCards = ({ el, handleAddToFavorite, userData }: Props) => {
 
       <CardContent>
         <Typography variant="body2">
-          {el.article.slice(0, 149) + "..."}
+          {el.article.slice(0, 200) + "..."}
         </Typography>
       </CardContent>
       <CardActions className="card-actions" disableSpacing>

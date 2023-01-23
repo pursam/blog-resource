@@ -4,6 +4,8 @@
   margin: 0 0 0 1px;
   padding: 16px 16px;
   font-weight: 600;
+  text-align: inherit;
+  // text-align: center;
   color: #cacaca;
   background-color: inherit;
   border: 0;
@@ -46,9 +48,20 @@
     left: 0;
     top: 100%;
     width: 120%;
-    background-color: rgb(85, 82, 82);
     z-index: 4;
+
+    z-index: 900;
+
+    background-color: rgb(85, 82, 82);
+    @media (max-width: 779px) {
+      width: 30%;
+      top: 0;
+      left: 70%;
+      flex-direction: row;
+    }
     &__item {
+      z-index: 900;
+
       display: block;
       text-indent: 10px;
       color: #cacaca;
@@ -64,6 +77,19 @@
     }
   }
   &:hover > .dropdown-wrap {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.app-btn--tags {
+  z-index: 10;
+}
+.menu-wrap {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-direction: row;
+  @media (max-width: 779px) {
+    flex-direction: column;
   }
 }

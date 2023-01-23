@@ -10,16 +10,10 @@ type Props = {};
 
 function Menu(prop: Props) {
   return (
-    <Box
-      sx={{
-        flexGrow: 1,
-        display: { xs: "none", md: "flex" },
-        justifyContent: "center",
-      }}
-    >
+    <Box className="menu-wrap">
       {pages.map((page, i) =>
         page.name === "РАЗДЕЛЫ" ? (
-          <button key={page.name} className="app-btn">
+          <button key={page.name} className="app-btn app-btn--tags">
             <span className="app-btn__span">{page.name}</span>
             <span className="app-btn__bg" />
             <div className="dropdown-wrap">

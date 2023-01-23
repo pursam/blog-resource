@@ -50,10 +50,10 @@ const Slider = (props: Props) => {
                 {s.tags}
               </Link>
             </div>
-            <h1 className="article__name">{s.name}</h1>
+            <h2 className="article__name">{s.name}</h2>
             <div className="article__read-this">
               <Link
-                to={"/article/post" + s.id}
+                to={"/articles/post" + s.id}
                 className="article__read-this-link"
               >
                 Read this article
