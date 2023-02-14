@@ -1,6 +1,6 @@
-##In this project, I tested my skills on the task:
+## In this project, I tested my skills on the task:
 - Create a blog resource
-- Create an interface from individual components
+- interface be made up of individual components
 - Add the ability to interact with the user in the form of likes
 - Use React in combination with Typescript
 
@@ -9,10 +9,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-### `npm start` 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# To see the deployment of the project, you can use this link to netlify hosting [https://pursam-replica-blog.netlify.app](https://pursam-replica-blog.netlify.app)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Or
+
+# You will need to have node.js installed, run the console in the root of the repository and enter these commands in turn:
+
+'npm init' - will download all dependent components
+'npm start' - will start the project in developer demo mode, all changes in the code will be applied to the dynamically updated page [http://localhost:3000](http://localhost:3000)
 
