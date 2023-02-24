@@ -13,7 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Or
 
-# You will need to have node.js installed, run the console in the root of the repository and enter these commands in turn:
+## You will need to have node.js installed, run the console in the root of the repository and enter these commands in turn:
 
 `npm init` - will download all dependent components
 `npm start` - will start the project in developer demo mode,
